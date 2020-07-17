@@ -1,10 +1,13 @@
 import React from "react";
+import Planner from "./Planner";
+import Relaxation from "./Relaxation";
 //import "../App.css";
 
 function Nav() {
   return (
     <div>
-      <h1>Nav</h1>
+      <Planner />
+      <Relaxation />
     </div>
   );
 }
