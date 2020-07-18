@@ -1,11 +1,11 @@
 import React from "react";
-//import "../App.css";
-import { Tasklist } from "./Tasklist";
+import "../App.css";
+//import { Tasklist } from "./Tasklist";
 
 function Planner() {
   return (
     <div>
-      <Tasklist />
+      <h1>Planner</h1>
     </div>
   );
 }

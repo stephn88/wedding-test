@@ -1,14 +1,27 @@
 import React from "react";
 import Planner from "./Planner";
 import Relaxation from "./Relaxation";
-//import "../App.css";
+import "../App.css";
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
-    <div>
-      <Planner />
-      <Relaxation />
-    </div>
+    <nav>
+      <ul className="nav-links">
+        <Link to="/">
+          <li>Home</li>
+        </Link>
+        <Link to="/planner">
+          <li>Planner</li>
+        </Link>
+        <Link to="/relaxation">
+          <li>Relaxation</li>
+        </Link>
+        <Link to="/about">
+          <li>About</li>
+        </Link>
+      </ul>
+    </nav>
   );
 }
 
