@@ -12,7 +12,7 @@ const Countdown = () => {
   let interval = useRef();
 
   const startTimer = () => {
-    const countdownDate = new Date("June 26, 2021").getTime();
+    const countdownDate = new Date("").getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();
@@ -41,15 +41,26 @@ const Countdown = () => {
     };
   });
 
+  const [selectedDate, setSelectedDate] = useState(null);
+
   return (
     <section className="timer-container">
       <section className="timer">
         <div>
           <span className="timer-icon"></span>
+          <h2>Pick your wedding date</h2>
+          <DatePicker
+            selected={selectedDate}
+            onChange={(date) => setSelectedDate(date)}
+            dateFormat="dd/MM/yyyy"
+            minDate={new Date()}
+            scrollableMonthYearDropdown
+            showMonthDropdown
+            showYearDropdown
+          />
           <h2>Wedding Day Countdown</h2>
         </div>
         <div>
-          <span>and</span>
           <section>
             <p>{timerDays}</p>
             <p>Days</p>

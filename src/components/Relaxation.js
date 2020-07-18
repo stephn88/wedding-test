@@ -22,6 +22,7 @@ function Relaxation() {
         src="https://www.duffthepsych.com/wp-content/uploads/2015/02/breathe-gif.gif"
         alt="breathing exercise for anxiety"
       />
+
       <Footer />
     </div>
   );

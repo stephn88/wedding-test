@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css";
+//import "../App.css";
 //import Tasklist from "./Tasklist";
 import Nav from "./Nav";
 import Footer from "./Footer";
@@ -9,7 +9,7 @@ function Planner() {
     <div>
       <Nav />
       <h1>Planner</h1>
-      <img src="/images/groom-laugh.jpg" alt="groom laughing" />
+      <img src="/images/steps-veil.jpg" alt="groom laughing" />
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Habitasse platea
