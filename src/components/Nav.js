@@ -21,6 +21,7 @@ function Nav() {
           <li>About</li>
         </Link>
       </ul>
+      <img src="./images/logo.png" alt="logo" />
     </nav>
   );
 }

@@ -7,14 +7,13 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Relaxation from "./components/Relaxation";
 import Nav from "./components/Nav";
-//import Taskist from "./components/Tasklist";
 import Footer from "./components/Footer";
+//
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Nav />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/tasklist" exact component={Tasklist} />
@@ -23,10 +22,6 @@ function App() {
         </Switch>
       </div>
     </Router>
-    <div> 
-      <Footer/>
-      </div>
-
   );
 }
 
