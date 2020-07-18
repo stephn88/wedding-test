@@ -1,6 +1,4 @@
 import React from "react";
-import Planner from "./Planner";
-import Relaxation from "./Relaxation";
 import "../App.css";
 import { Link } from "react-router-dom";
 

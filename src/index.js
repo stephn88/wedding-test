@@ -4,11 +4,15 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router } from "react-router-dom";
+//import Nav from "./components";
+//import Footer from "./components";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router basename={process.env.PUBLIC_URL}>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </Router>,
   document.getElementById("root")
 );
 
