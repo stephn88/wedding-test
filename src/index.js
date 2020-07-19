@@ -4,8 +4,9 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router } from "react-router-dom";
-//import Nav from "./components";
-//import Footer from "./components";
+//import Nav from "./components/Nav";
+//import Footer from "./components/Footer";
+//import Header from "./components/Header";
 
 ReactDOM.render(
   <Router basename={process.env.PUBLIC_URL}>

@@ -12,7 +12,11 @@ const Countdown = () => {
   let interval = useRef();
 
   const startTimer = () => {
-    const countdownDate = new Date("").getTime();
+    let countdownDate = new Date();
+    //if (selectedDate != null)
+    {
+      countdownDate = selectedDate.getTime();
+    }
 
     interval = setInterval(() => {
       const now = new Date().getTime();
@@ -21,7 +25,7 @@ const Countdown = () => {
       // const years = Math.floor(distance / (1000 * 60 * 60 * 24 * 365));
       //const months = Math.floor(distance / (1000 * 60 * 60 * 24 * 2.25));
       //const weeks = Math.floor(distance / (1000 * 60 * 60 * 24 * 7));
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24)); //rounding to 1 day
 
       if (distance < 0) {
         clearInterval(interval.current);
@@ -31,7 +35,7 @@ const Countdown = () => {
         //setWeeksYears(weeks);
         setTimerDays(days);
       }
-    }, 1000);
+    }, 3600); //runs every hour to update
   };
   //when the component dismounts and the useEffect hook will run this code//
   useEffect(() => {
@@ -41,7 +45,7 @@ const Countdown = () => {
     };
   });
 
-  const [selectedDate, setSelectedDate] = useState(null);
+  const [selectedDate, setSelectedDate] = useState(new Date());
 
   return (
     <section className="timer-container">
@@ -53,8 +57,8 @@ const Countdown = () => {
             selected={selectedDate}
             onChange={(date) => setSelectedDate(date)}
             dateFormat="dd/MM/yyyy"
-            minDate={new Date()}
-            scrollableMonthYearDropdown
+            minDate={new Date()} //this stops user picking dates previous to today's date
+            scrollableMonthYearDropdown //allows for scrolling through months to make it easier to pick future dates along with year and month dropdowns
             showMonthDropdown
             showYearDropdown
           />
@@ -62,8 +66,8 @@ const Countdown = () => {
         </div>
         <div>
           <section>
-            <p>{timerDays}</p>
-            <p>Days</p>
+            <h3>{timerDays}</h3>
+            <h3>Days</h3>
           </section>
           <p>days until your special day</p>
         </div>

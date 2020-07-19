@@ -1,15 +1,16 @@
 import React from "react";
 //import "../App.css";
-//import Tasklist from "./Tasklist";
+import Tasklist from "./Tasklist";
 import Nav from "./Nav";
 import Footer from "./Footer";
+import steps from "../images/steps-veil.jpg";
 
 function Planner() {
   return (
     <div>
       <Nav />
-      <h1>Planner</h1>
-      <img src="/images/steps-veil.jpg" alt="groom laughing" />
+      <h1 className="home-planner">Planner</h1>
+      <img src={steps} alt="groom laughing" />
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Habitasse platea
@@ -22,7 +23,7 @@ function Planner() {
         scelerisque eleifend donec pretium vulputate sapien nec. Et tortor
         consequat id porta nibh venenatis cras.
       </p>
-
+      <Tasklist />
       <Footer />
     </div>
   );

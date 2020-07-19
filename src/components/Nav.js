@@ -12,6 +12,9 @@ function Nav() {
         <Link to="/planner">
           <li>Planner</li>
         </Link>
+        <Link to="/giftlist">
+          <li>Gift List</li>
+        </Link>
         <Link to="/relaxation">
           <li>Relaxation</li>
         </Link>
@@ -19,7 +22,6 @@ function Nav() {
           <li>About</li>
         </Link>
       </ul>
-      <img src="./images/logo.png" alt="logo" />
     </nav>
   );
 }

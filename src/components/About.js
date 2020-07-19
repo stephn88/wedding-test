@@ -2,13 +2,14 @@ import React from "react";
 import "../App.css";
 import Nav from "./Nav";
 import Footer from "./Footer";
+import laugh from "../images/groom-laugh.jpg";
 
 function About() {
   return (
     <div>
       <Nav />
       <h1>About</h1>
-      <img src="/images/groom-laugh.jpg" alt="groom laughing" />
+      <img src={laugh} alt="groom laughing" />
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Habitasse platea

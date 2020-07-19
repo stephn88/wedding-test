@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "./Footer";
 import Nav from "./Nav";
+import breathe from "../images/breathe.jpg";
 //import "../App.css";
 
 function Relaxation() {
@@ -8,10 +9,7 @@ function Relaxation() {
     <div>
       <Nav />
       <h1>Relaxation</h1>
-      <img
-        src="./images/breathe.jpg"
-        alt="breathe in neon surrounded by foliage"
-      />
+      <img src={breathe} alt="breathe in neon surrounded by foliage" />
       <h3>
         Wedding planning can be stressful. When you start to feel overwhelmed,
         breathe in sync with this.
