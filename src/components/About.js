@@ -1,5 +1,6 @@
 import React from "react";
 import "../App.css";
+import Header from "./Header";
 import Nav from "./Nav";
 import Footer from "./Footer";
 import laugh from "../images/groom-laugh.jpg";
@@ -7,6 +8,7 @@ import laugh from "../images/groom-laugh.jpg";
 function About() {
   return (
     <div>
+      <Header />
       <Nav />
       <h1>About</h1>
       <img src={laugh} alt="groom laughing" />

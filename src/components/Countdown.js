@@ -51,7 +51,6 @@ const Countdown = () => {
     <section className="timer-container">
       <section className="timer">
         <div>
-          <span className="timer-icon"></span>
           <h2>Pick your wedding date</h2>
           <DatePicker
             selected={selectedDate}
@@ -64,12 +63,10 @@ const Countdown = () => {
           />
           <h2>Wedding Day Countdown</h2>
         </div>
-        <div>
-          <section>
-            <h3>{timerDays}</h3>
-            <h3>Days</h3>
-          </section>
-          <p>days until your special day</p>
+        <div className="c">
+          <h3>{timerDays}</h3>
+          <h3>Days</h3>
+          <p>until your special day</p>
         </div>
       </section>
     </section>
