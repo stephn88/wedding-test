@@ -87,7 +87,7 @@ button:active {
 
 .task-btn {
   background-color: green;
-  width: 30%;
+
   margin-bottom: 10px;
   margin-left: 10px;
   color: white;
@@ -118,8 +118,11 @@ button:active {
   margin-right: 20px;
 }
 
-.todo {
-  color: red;
+.ind-tasks-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px;
 }
 
 /*countdown

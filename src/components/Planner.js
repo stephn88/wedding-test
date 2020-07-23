@@ -56,7 +56,7 @@ function Planner() {
     "Buy thank you presents",
     "Go menu tasting with caterers",
     "Make table plan",
-    "confirm guest numbers and dietary requirements",
+    "Confirm guest numbers and dietary requirements",
   ];
   const tasksForOne = [
     "Have wedding rehearsal",
@@ -86,18 +86,32 @@ function Planner() {
           Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien
           nec. Et tortor consequat id porta nibh venenatis cras.
         </p>
-        <h1>18 Months Out</h1>
-        <Tasklist giventasks={tasksForEighteen} />
-        <h1>12 Months Out</h1>
-        <Tasklist giventasks={tasksForTwelve} />
-        <h1>9 Months Out</h1>
-        <Tasklist giventasks={tasksForNine} />
-        <h1>6 Months Out</h1>
-        <Tasklist giventasks={tasksForSix} />
-        <h1>3 Months Out</h1>
-        <Tasklist giventasks={tasksForThree} />
-        <h1>1 Week Out</h1>
-        <Tasklist giventasks={tasksForOne} />
+        <div className="ind-tasks-container">
+          <span>
+            <h1>18 Months Out</h1>
+            <Tasklist giventasks={tasksForEighteen} />
+          </span>
+          <span>
+            <h1>12 Months Out</h1>
+            <Tasklist giventasks={tasksForTwelve} />
+          </span>
+          <span>
+            <h1>9 Months Out</h1>
+            <Tasklist giventasks={tasksForNine} />
+          </span>
+          <span>
+            <h1>6 Months Out</h1>
+            <Tasklist giventasks={tasksForSix} />
+          </span>
+          <span>
+            <h1>3 Months Out</h1>
+            <Tasklist giventasks={tasksForThree} />
+          </span>
+          <span>
+            <h1>1 Week Out</h1>
+            <Tasklist giventasks={tasksForOne} />
+          </span>
+        </div>
       </div>
       <Footer />
     </div>
