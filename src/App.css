@@ -31,13 +31,17 @@ h1 {
 }
 
 .header {
-  background-color: seashell;
   padding-bottom: 10px;
+  justify-content: center;
 }
 .header img {
   width: 50%;
   flex-flow: row;
-  background-color: seashell;
+  justify-content: center;
+}
+
+.footer h4 {
+  text-align: center;
 }
 
 li {
@@ -125,25 +129,15 @@ button:active {
   margin: 20px;
 }
 
-/*countdown
 .timer {
-  display: flex;
-  justify-content: center;
-  flex: column;
-}
-
-.timer div:first-child {
-  text-align: center;
-}
-
-.timer div:last-child {
-  grid-template-columns: repeat(7, 1fr);
-  text-align: center;
-  border-radius: 2px solid black;
   display: grid;
-  margin-top: 3em;
-  padding: 3em;
-}*/
+  justify-content: center;
+  flex: row;
+}
+
+.c {
+  text-align: center;
+}
 
 @media only screen and (max-width 600px) {
   .tasklist-container {

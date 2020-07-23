@@ -6,10 +6,10 @@ class ErrorPage extends React.Component {
   render() {
     return (
       <div>
-        <img src={Error} />
         <h1>
-          <Link to="/">Go to Home</Link>
+          <Link to="/">Click here to return to the homepage</Link>
         </h1>
+        <img className="error" src={Error} />
       </div>
     );
   }

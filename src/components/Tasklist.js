@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 
 function Tasklist(props) {
-  const [tasks, setTasks] = useState(props.giventasks);
+  let newTasks = props.givenTasks; //creating new task array
+
   //, () => {
   //const localData = localStorage.getItem("tasks");
   // return localData ? JSON.parse(localData) : [];
@@ -11,6 +12,13 @@ function Tasklist(props) {
   //useEffect(() => {
   //localStorage.setItem("tasks", JSON.stringify(tasks));
   // }, [tasks]);
+
+  const savedTasks = JSON.parse(localStorage.getItem(props.tasksReference));
+  if (savedTasks != null) {
+    newTasks = savedTasks;
+  } //checking to see if there is a tasklist stored under given name
+
+  const [tasks, setTasks] = useState(newTasks); //tasks that are the given task or saved tasks will be displayed
 
   const handleSubmit = (task) => {
     setTasks([...tasks, task]);
@@ -21,6 +29,10 @@ function Tasklist(props) {
     newArr.splice(index, 1);
     setTasks(newArr);
   };
+
+  useEffect(() => {
+    localStorage.setItem(props.tasksReference, JSON.stringify(tasks)); //useEffect is saving current state of lists when they are altered
+  });
 
   return (
     <div>

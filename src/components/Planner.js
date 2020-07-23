@@ -3,7 +3,7 @@ import Tasklist from "./Tasklist";
 import Nav from "./Nav";
 import Header from "./Header";
 import Footer from "./Footer";
-import steps from "../images/steps-veil.jpg";
+//import steps from "../images/steps-veil.jpg";
 
 function Planner() {
   const tasksForEighteen = [
@@ -73,7 +73,7 @@ function Planner() {
       <Nav />
       <div className="planner-container">
         <h1 className="home-planner">Planner</h1>
-        <img className="planner img" src={steps} alt="groom laughing" />
+
         <p className="pl-p-container">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitasse
@@ -89,27 +89,33 @@ function Planner() {
         <div className="ind-tasks-container">
           <span>
             <h1>18 Months Out</h1>
-            <Tasklist giventasks={tasksForEighteen} />
+            <Tasklist
+              tasksReference="EighteenMonths"
+              givenTasks={tasksForEighteen}
+            />
           </span>
           <span>
             <h1>12 Months Out</h1>
-            <Tasklist giventasks={tasksForTwelve} />
+            <Tasklist
+              tasksReference="TwelveMonths"
+              givenTasks={tasksForTwelve}
+            />
           </span>
           <span>
             <h1>9 Months Out</h1>
-            <Tasklist giventasks={tasksForNine} />
+            <Tasklist tasksReference="NineMonths" givenTasks={tasksForNine} />
           </span>
           <span>
             <h1>6 Months Out</h1>
-            <Tasklist giventasks={tasksForSix} />
+            <Tasklist tasksReference="SixMonths" givenTasks={tasksForSix} />
           </span>
           <span>
             <h1>3 Months Out</h1>
-            <Tasklist giventasks={tasksForThree} />
+            <Tasklist tasksReference="ThreeMonths" givenTasks={tasksForThree} />
           </span>
           <span>
             <h1>1 Week Out</h1>
-            <Tasklist giventasks={tasksForOne} />
+            <Tasklist tasksReference="OneWeek" givenTasks={tasksForOne} />
           </span>
         </div>
       </div>

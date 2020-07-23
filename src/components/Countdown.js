@@ -53,8 +53,7 @@ const Countdown = () => {
           <h2>Wedding Day Countdown</h2>
         </div>
         <div className="c">
-          <h3>{timerDays}</h3>
-          <h3>Days</h3>
+          <h2>{timerDays} days</h2>
           <p>until your special day</p>
         </div>
       </section>
