@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import Header from "../Header";
 import Nav from "../Nav";
 import Footer from "../Footer";
-//import { MealForTwo } from "./Mealfortwo";
-//import { Basket } from "./Basket";
+import { Link } from "react-router-dom";
 
 function GiftList() {
   const [basket, setBasket] = useState([]);
@@ -84,8 +83,12 @@ function GiftList() {
             <h2>{gift.name}</h2>
             <h2>{gift.price}</h2>
             <img src={gift.image} alt={gift.name} />
-            <button onClick={() => addToGiftList(gift)}>Add to Giftlist</button>
-            <button>More info</button>
+            <button>
+              <Link to="*">Add to Giftlist</Link>
+            </button>
+            <button>
+              <Link to="*">More info</Link>
+            </button>
           </div>
         ))}
       </div>
