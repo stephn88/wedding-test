@@ -6,56 +6,72 @@ html {
 }
 
 .App {
-  display: flex;
-  justify-content: space-around;
   font-family: "PT Sans Narrow", sans-serif;
   align-items: center;
-  min-height: 10vh;
   background-color: ghostwhite;
   color: black;
+  background-image: url("https://images.unsplash.com/photo-1490707967831-1fd9b48e40e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-.nav-Links {
-  width: 50%;
+.nav-links {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  list-style: none;
+  font-size: large;
+  background-color: seashell;
+  padding: 10px;
+  text-transform: uppercase;
+  flex-wrap: wrap;
+}
+
+.header {
+  background-color: seashell;
+  padding-bottom: 10px;
+}
+.header img {
+  width: 50%;
+  flex-flow: row;
+  background-color: seashell;
 }
 
 li {
-  list-style: none;
   width: 50%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  list-style: none;
 }
 
-.timer-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.gifts-container {
+.giftlist {
+  background-color: seashell;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 10px 10px;
+  grid-template-columns: 1fr 1fr;
+}
+.gifts-container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  max-height: 650px;
+  margin: 20px;
+  text-align: center;
+  background-color: seashell;
+  border: black solid 2px;
+  text-transform: uppercase;
 }
 
 .gifts-container img {
-  width: 50%;
+  width: 80%;
+  height: auto;
+  flex-direction: column;
 }
 
 .gifts-container button {
-  width: 50%;
+  width: 40%;
   height: 20px;
   background-color: red;
   color: white;
+  margin-bottom: 10px;
 }
 
 button:active {
@@ -82,10 +98,39 @@ button:active {
   padding: 3em;
 }
 
-@media screen and (max-width: 480px) {
-  .timer div:last-child {
-    margin-left: 2em;
-    margin-right: 2em;
-    padding: 2em 1em;
+@media only screen and (max-width 600px) {
+  .tasklist-container {
+    font-size: 1px;
+    display: flex;
+    justify-content: start;
+  }
+
+  .planner-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .img.planner {
+    width: 50%;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  .task-btn {
+    font-size: 10px;
+    background-color: green;
+    color: white;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
   }
 }

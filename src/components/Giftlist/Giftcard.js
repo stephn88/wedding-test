@@ -1,6 +1,6 @@
 import React from "react";
 
-export const MealForTwo = (props) => {
+export const GiftCard = (props) => {
   const addtobasket = () => {
     console.log("clicked");
   };

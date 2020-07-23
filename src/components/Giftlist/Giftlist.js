@@ -46,14 +46,14 @@ function GiftList() {
         "https://images.unsplash.com/photo-1517339234442-5cfdc9a90a69?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80",
     },
     {
-      name: "flights",
+      name: "Flights",
       price: "£400",
       id: 6,
       image:
         "https://images.unsplash.com/photo-1576335044483-99788804938e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80",
     },
     {
-      name: "hotel",
+      name: "Hotel",
       price: "£400",
       id: 7,
       image:
@@ -84,6 +84,7 @@ function GiftList() {
             <h2>{gift.price}</h2>
             <img src={gift.image} alt={gift.name} />
             <button onClick={() => addToGiftList(gift)}>Add to Giftlist</button>
+            <button>More info</button>
           </div>
         ))}
       </div>
