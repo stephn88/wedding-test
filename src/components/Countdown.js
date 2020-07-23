@@ -1,19 +1,15 @@
 import React, { useState, useRef, useEffect } from "react";
-//import "./css/countdown.css";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 const Countdown = () => {
-  // const [timerYears, setTimerYears] = useState("00");
-  //const [timerMonths, setTimerMonths] = useState("00");
-  // const [timerWeeks, setWeeksYears] = useState("00");
   const [timerDays, setTimerDays] = useState("00");
 
   let interval = useRef();
 
   const startTimer = () => {
     let countdownDate = new Date();
-    //if (selectedDate != null)
+
     {
       countdownDate = selectedDate.getTime();
     }
@@ -21,21 +17,14 @@ const Countdown = () => {
     interval = setInterval(() => {
       const now = new Date().getTime();
       const distance = countdownDate - now;
-
-      // const years = Math.floor(distance / (1000 * 60 * 60 * 24 * 365));
-      //const months = Math.floor(distance / (1000 * 60 * 60 * 24 * 2.25));
-      //const weeks = Math.floor(distance / (1000 * 60 * 60 * 24 * 7));
       const days = Math.floor(distance / (1000 * 60 * 60 * 24)); //rounding to 1 day
 
       if (distance < 0) {
         clearInterval(interval.current);
       } else {
-        // setTimerYears(years);
-        // setTimerMonths(months);
-        //setWeeksYears(weeks);
         setTimerDays(days);
       }
-    }, 3600); //runs every hour to update
+    }, 1000);
   };
   //when the component dismounts and the useEffect hook will run this code//
   useEffect(() => {

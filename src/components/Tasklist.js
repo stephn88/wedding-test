@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
-//import styles from "../css/tasklist.module.css";
+//import {
+//TasksEighteen,
+//TasksTwelve,
+// TasksNine,
+// TasksSix,
+// TasksThree,
+//TasksOne,
+//} from "../components/Tasks";
 
 function Tasklist(props) {
   const [tasks, setTasks] = useState([
@@ -73,6 +80,8 @@ function Tasklist(props) {
     <div>
       <div>
         <Header numTodos={tasks.length} />
+        <TodoList tasks={tasks} onDelete={handleDelete} />
+        <TodoList tasks={tasks} onDelete={handleDelete} />
         <TodoList tasks={tasks} onDelete={handleDelete} />
         <SubmitForm onFormSubmit={handleSubmit} />
       </div>

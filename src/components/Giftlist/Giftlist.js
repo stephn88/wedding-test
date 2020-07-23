@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-//import "./App.css";
 import Header from "../Header";
 import Nav from "../Nav";
 import Footer from "../Footer";
@@ -76,6 +75,8 @@ function GiftList() {
     <div>
       <Header />
       <Nav />
+
+      <h1>Gift List</h1>
       <h2>Have everything you need? Why not ask for honeymoon experiences?</h2>
       <div>
         {gift.map((gift, id) => (

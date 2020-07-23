@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-//import "./App.css";
+import "./App.css";
 import Planner from "./components/Planner";
 import { Tasklist } from "./components/Tasklist";
 import Home from "./components/Home";
