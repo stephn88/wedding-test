@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/home.css";
+
 import Header from "./Header";
 import Nav from "./Nav";
 import Countdown from "./Countdown";

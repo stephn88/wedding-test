@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../App.module.css";
+import "../App.css";
 import Tasklist from "./Tasklist";
 import Nav from "./Nav";
 import Footer from "./Footer";

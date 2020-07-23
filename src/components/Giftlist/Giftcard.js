@@ -1,6 +1,6 @@
 import React from "react";
 
-export const GiftCard = (props) => {
+export const  = (props) => {
   const addtobasket = () => {
     console.log("clicked");
   };
