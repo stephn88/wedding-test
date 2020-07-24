@@ -23,8 +23,8 @@ function Planner() {
     "Book entertainment",
     "Hire caters",
     "Start dress shopping",
-    "Look for bridesmaids dresses",
-    "Book hair & make-up artist/s",
+    "Look for maids' dresses",
+    "Book hair & make-up",
   ];
   const tasksForNine = [
     "Book a florist",
@@ -54,14 +54,15 @@ function Planner() {
     "Break in shoes",
     "Write speeches",
     "Buy thank you presents",
-    "Go menu tasting with caterers",
+    "Go menu tasting",
     "Make table plan",
-    "Confirm guest numbers & dietary requirements",
+    "Confirm guest numbers",
+    "Check guest allergies",
   ];
   const tasksForOne = [
     "Have wedding rehearsal",
-    "Confirm all bookings & vendors",
-    "Finalise wedding day plan & DELEGATE",
+    "Confirm all bookings",
+    "Finalise wedding day plan",
     "Settle all final payments",
     "Collect hired items",
     "Pick up wedding day",
@@ -87,6 +88,7 @@ function Planner() {
         </p>
         <div>
           <span>
+            {/*using spans to separate each list*/}
             <h1>18 Months Out</h1>
             <Tasklist
               tasksReference="EighteenMonths"

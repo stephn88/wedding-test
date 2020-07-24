@@ -46,6 +46,15 @@ h1 {
   color: red;
 }
 
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  word-wrap: normal;
+}
+
 h4 {
   text-align: center;
   justify-items: center;
@@ -64,6 +73,16 @@ li {
   background-color: seashell;
   display: Flex;
   flex-direction: row;
+}
+
+.gifts-sp-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.gifts-sp-container p {
+  text-align: center;
+  word-wrap: normal;
 }
 
 .gifts-container {
@@ -86,7 +105,7 @@ li {
 .gifts-container button {
   width: 40%;
   height: 20px;
-  background-color: red;
+  background-color: rgb(41, 212, 41);
   color: white;
   margin-bottom: 10px;
 }
@@ -174,16 +193,19 @@ button:active {
 
   /*giftlist*/
 
-  /*planner*/
-  .ind-tasks-container {
+  .gifts-sp-container {
+    display: flex;
+    flex-direction: column;
   }
+  /*planner*/
 
   .planner-container {
     display: flex;
     flex-direction: column;
     margin: 10px;
-    font-size: 20px;
+    font-size: 25px;
     text-align: left;
+    justify-items: center;
   }
 
   .planner-img {
@@ -193,24 +215,50 @@ button:active {
   }
 
   .task-btn {
-    font-size: 25px;
+    font-size: 20px;
     width: auto;
-    align-items: stretch;
+    align-content: flex-end;
+    vertical-align: right;
   }
 
   .sub-btn {
-    font-size: 25px;
+    font-size: 15px;
     width: auto;
-    align-items: stretch;
+    text-transform: uppercase;
+    background-color: springgreen;
+  }
+
+  .reset-btn {
+    font-size: 15px;
+    width: auto;
+    background-color: red;
+    color: seashell;
+    text-transform: uppercase;
+    margin: 5px;
   }
 
   span {
     font-size: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    border: solid 1px lightpink;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(253, 248, 244);
   }
 
+  span h1 {
+    text-align: center;
+    font-size: 27px;
+  }
+
+  .Tasklist {
+    font-size: 30px;
+  }
+
+  .todo-content {
+    font-size: 20px;
+  }
   /*relaxation*/
 
   /*about*/

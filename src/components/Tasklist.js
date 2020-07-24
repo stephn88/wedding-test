@@ -39,8 +39,13 @@ function Tasklist(props) {
       <div>
         <Header numTodos={tasks.length} />
         <TodoList tasks={tasks} onDelete={handleDelete} />
-        <SubmitForm onFormSubmit={handleSubmit} />
-        <button onClick={() => setTasks(props.givenTasks)}>Reset</button>
+        <SubmitForm className="form" onFormSubmit={handleSubmit} />
+        <button
+          className="reset-btn"
+          onClick={() => setTasks(props.givenTasks)}
+        >
+          Reset
+        </button>
       </div>
     </div>
   );
@@ -72,7 +77,7 @@ function SubmitForm(props) {
 const Header = (props) => {
   return (
     <div>
-      <h1>You have {props.numTodos} Todos</h1>
+      <h1>You have {props.numTodos} tasks</h1>
     </div>
   );
 };

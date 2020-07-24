@@ -74,22 +74,29 @@ function GiftList() {
     <div>
       <Header />
       <Nav />
-
       <h1>Gift List</h1>
       <h2>Have everything you need? Why not ask for honeymoon experiences?</h2>
       <div>
         {gift.map((gift, id) => (
-          <div className="gifts-container" key={id}>
-            <h2>{gift.name}</h2>
-            <h2>{gift.price}</h2>
-            <img src={gift.image} alt={gift.name} />
-            <button>
-              <Link to="*">Add to Giftlist</Link>
-            </button>
-            <button>
-              <Link to="*">More info</Link>
-            </button>
-          </div>
+          <span className="gifts-sp-container">
+            <div className="gifts-container" key={id}>
+              <h2>{gift.name}</h2>
+              <h2>{gift.price}</h2>
+              <img src={gift.image} alt={gift.name} />
+              <button>
+                <Link to="*">Add to Giftlist</Link>
+              </button>
+              <button>
+                <Link to="*">More info</Link>
+              </button>
+            </div>
+            <p>
+              lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Habitasse platea dictumst vestibulum rhoncus est. Adipiscing enim
+              c turpis. Nunc mi ipsu
+            </p>
+          </span>
         ))}
       </div>
       <Footer />
