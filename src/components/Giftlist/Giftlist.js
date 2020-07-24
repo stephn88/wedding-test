@@ -66,10 +66,6 @@ function GiftList() {
     },
   ]);
 
-  const addToGiftList = (gift) => {
-    setBasket([...basket, gift]);
-  };
-
   return (
     <div>
       <Header />

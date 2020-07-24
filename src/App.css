@@ -68,6 +68,9 @@ li {
   justify-content: center;
   align-items: center;
 }
+
+/*home*/
+
 /*giftlist*/
 .giftlist {
   background-color: seashell;
@@ -83,6 +86,8 @@ li {
 .gifts-sp-container p {
   text-align: center;
   word-wrap: normal;
+  justify-items: baseline;
+  font-size: 30px;
 }
 
 .gifts-container {
@@ -116,14 +121,66 @@ button:active {
 
 /*planner*/
 
-.task-btn {
-  background-color: green;
+.planner-container {
+  display: flex;
+  flex-direction: column;
+  margin: 100px;
+  font-size: 25px;
+  justify-content: center;
+}
 
+.gift-spans {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-right: 30px;
+  flex: 1 0 0;
+}
+
+/*span {
+  font-size: 20px;
+  text-align: left;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: solid 1px lightpink;
   margin-bottom: 10px;
-  margin-left: 10px;
-  color: white;
-  font-size: 14px;
+  width: 30%;
+  background-color: rgb(253, 248, 244);
+}
+*/
+.task-btn {
+  font-size: 20px;
+  width: auto;
+  justify-content: end;
+  vertical-align: right;
   text-transform: uppercase;
+  background-color: green;
+  color: seashell;
+  margin-left: 20px;
+  vertical-align: top;
+  margin-bottom: 10px;
+}
+
+.sub-btn {
+  font-size: 15px;
+  width: 50%;
+  text-transform: uppercase;
+  background-color: springgreen;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.reset-btn {
+  font-size: 15px;
+  width: 50%;
+  background-color: red;
+  color: black;
+  text-transform: uppercase;
+  margin: 5px;
 }
 
 .task-btn:hover {
@@ -131,31 +188,72 @@ button:active {
   color: black;
 }
 
-.task-submit {
-  margin-left: 100px;
-  font-size: 14px;
-  text-transform: uppercase;
-}
-.tasklist-container {
-  font-size: 16px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-left: 100px;
-}
-
-.img {
-  width: 50%;
-  float: left;
-  margin-right: 20px;
-}
-
-.ind-tasks-container {
+/*giftlst*/
+/*.gifts-sp-container {
+  font-size: 20px;
+  text-align: left;
+  padding-left: 40px;
+  padding-right: 40px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  margin: 20px;
+  justify-content: space-evenly;
+  border: solid 1px lightpink;
+  margin-bottom: 10px;
+  width: 30%;
+  background-color: rgb(253, 248, 244);
+}*/
+
+.gifts-container {
+  margin: 40px;
+  text-align: center;
+  background-color: seashell;
+  max-width: 150%;
+  max-height: 150%;
+  text-transform: uppercase;
 }
 
+.gifts-container img {
+  width: 100%;
+  flex-direction: column;
+}
+
+.gifts-sp-container p {
+  font-size: 30px;
+  vertical-align: center;
+}
+
+.gifts-container button {
+  width: 40%;
+  background-color: rgb(41, 212, 41);
+  color: white;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+button:active {
+  transform: translate(2px);
+}
+
+/*relaxation*/
+
+/*about*/
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin: 100px;
+}
+
+.about-container p {
+  font-size: 20px;
+}
+
+.about-img {
+  width: 100%;
+  justify-self: center;
+}
+
+/*home*/
 .timer {
   display: grid;
   justify-content: center;
@@ -166,6 +264,7 @@ button:active {
   text-align: center;
 }
 
+/*mobiles*/
 @media only screen and (max-device-width: 480px) {
   .App {
     max-width: 100%;
@@ -177,7 +276,7 @@ button:active {
     flex-direction: row;
     justify-content: space-between;
     padding: 5px;
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 10px;
     color: black;
   }
@@ -197,6 +296,22 @@ button:active {
     display: flex;
     flex-direction: column;
   }
+
+  .gifts-sp-container p {
+    font-size: 20px;
+  }
+
+  .gifts-container button {
+    width: 80%;
+    background-color: rgb(41, 212, 41);
+    color: white;
+    text-transform: uppercase;
+  }
+
+  button:active {
+    transform: translate(2px);
+  }
+
   /*planner*/
 
   .planner-container {
@@ -260,8 +375,24 @@ button:active {
     font-size: 20px;
   }
   /*relaxation*/
-
+  h3 {
+    font-size: 25px;
+    text-align: center;
+  }
   /*about*/
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+
+  .about-container p {
+    font-size: 20px;
+  }
+
+  .about-img {
+    width: 100%;
+  }
 
   /*error*/
   .error-container {
@@ -277,5 +408,119 @@ button:active {
     padding-top: 50px;
     padding-bottom: 100px;
     width: 95%;
+  }
+}
+
+/*ipads*/
+@media only screen and (min-width: 481px) and (max-width: 959px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  /*planner*/
+
+  .planner-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    font-size: 25px;
+    text-align: left;
+    justify-items: center;
+  }
+
+  span {
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px lightpink;
+    margin-bottom: 30px;
+    padding: 100px;
+    background-color: rgb(253, 248, 244);
+  }
+
+  .task-btn {
+    font-size: 30px;
+    width: 100%;
+    align-content: flex-end;
+    vertical-align: right;
+  }
+
+  .sub-btn {
+    font-size: 25px;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: springgreen;
+    margin-left: 12px;
+  }
+
+  .reset-btn {
+    font-size: 25px;
+    width: 50%;
+    background-color: red;
+    color: seashell;
+    text-transform: uppercase;
+    margin: 5px;
+  }
+
+  /*giftlist*/
+
+  .gifts-sp-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gifts-container {
+    margin: 40px;
+    text-align: center;
+    background-color: seashell;
+    max-width: 150%;
+    max-height: 150%;
+    text-transform: uppercase;
+  }
+
+  .gifts-container img {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .gifts-sp-container p {
+    font-size: 30px;
+    vertical-align: center;
+  }
+
+  .gifts-container button {
+    width: 100%;
+    background-color: rgb(41, 212, 41);
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  button:active {
+    transform: translate(2px);
+  }
+  /*relaxation*/
+  h3 {
+    font-size: 35px;
+    text-align: center;
+  }
+  /*about*/
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+
+  .about-container p {
+    font-size: 20px;
+  }
+
+  .about-img {
+    width: 100%;
   }
 }

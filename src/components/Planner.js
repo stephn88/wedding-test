@@ -73,12 +73,12 @@ function Planner() {
       <Header />
       <Nav />
       <div className="planner-container">
+        <h1>Planner</h1>
         <img
           className="planner-img"
           src={kiss}
           alt="bride and groom kissing in orchard"
         />
-
         <p className="pl-p-container">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitasse
@@ -86,7 +86,7 @@ function Planner() {
           egestas. Faucibus ornare suspendisse sed nisi lacus sed viverra
           tellus.
         </p>
-        <div>
+        <div className="gift-spans">
           <span>
             {/*using spans to separate each list*/}
             <h1>18 Months Out</h1>

@@ -39,7 +39,7 @@ function Tasklist(props) {
       <div>
         <Header numTodos={tasks.length} />
         <TodoList tasks={tasks} onDelete={handleDelete} />
-        <SubmitForm className="form" onFormSubmit={handleSubmit} />
+        <SubmitForm onFormSubmit={handleSubmit} />
         <button
           className="reset-btn"
           onClick={() => setTasks(props.givenTasks)}
@@ -69,7 +69,7 @@ function SubmitForm(props) {
         value={term}
         onChange={(e) => setTerm(e.target.value)}
       />
-      <button className="sub-btn">Submit</button>
+      <button className="sub-btn">Add task</button>
     </form>
   );
 }
