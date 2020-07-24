@@ -40,6 +40,7 @@ function Tasklist(props) {
         <Header numTodos={tasks.length} />
         <TodoList tasks={tasks} onDelete={handleDelete} />
         <SubmitForm onFormSubmit={handleSubmit} />
+        <button onClick={() => setTasks(props.givenTasks)}>Reset</button>
       </div>
     </div>
   );
@@ -63,7 +64,7 @@ function SubmitForm(props) {
         value={term}
         onChange={(e) => setTerm(e.target.value)}
       />
-      <button>Submit</button>
+      <button className="sub-btn">Submit</button>
     </form>
   );
 }
@@ -101,7 +102,7 @@ const Todo = (props) => {
           props.onDelete(props.id);
         }}
       >
-        Completed
+        Done
       </button>
     </div>
   );

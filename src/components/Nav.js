@@ -12,7 +12,7 @@ function Nav() {
           <li>Planner</li>
         </Link>
         <Link to="/giftlist">
-          <li>Gift List</li>
+          <li>GiftList</li>
         </Link>
         <Link to="/relaxation">
           <li>Relaxation</li>

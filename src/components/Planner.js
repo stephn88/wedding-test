@@ -3,7 +3,7 @@ import Tasklist from "./Tasklist";
 import Nav from "./Nav";
 import Header from "./Header";
 import Footer from "./Footer";
-//import steps from "../images/steps-veil.jpg";
+import kiss from "../images/couple-kiss.jpg";
 
 function Planner() {
   const tasksForEighteen = [
@@ -11,7 +11,7 @@ function Planner() {
     "Pick venue",
     "Choose guests",
     "Pick ceremony type",
-    "View and book venue",
+    "View & book venue",
     "Book registrar/celebrant",
     "Finalise guest list",
     "Buy wedding insurance",
@@ -23,45 +23,45 @@ function Planner() {
     "Book entertainment",
     "Hire caters",
     "Start dress shopping",
-    "Start looking for bridesmaids dresses",
-    "Book hair and make-up artist/s",
+    "Look for bridesmaids dresses",
+    "Book hair & make-up artist/s",
   ];
   const tasksForNine = [
     "Book a florist",
     "Choose your cake",
-    "Order your dress (if you haven't already)",
-    "Buy your bridal accessories",
-    "Buy/make favours (if you want them)",
-    "Give notice of marriage at local registrar",
+    "Order your dress",
+    "Buy bridal accessories",
+    "Buy/make favours",
+    "Give notice of marriage",
   ];
   const tasksForSix = [
-    "Start shopping for groomswear",
+    "Look for groomswear",
     "Buy bridesmaids dresses",
-    "Book honeymoon and minimoon (if you're having one)",
+    "Book honeymoon",
     "Buy wedding rings",
-    "Organise first night accommodation",
-    "Discuss order of service with registrar/vicar",
-    "Choose ceremony reading, songs or poems",
-    "Start writing vows (if you're writing your own",
+    "Organise wedding hotel",
+    "Plan order of service",
+    "Pick ceremony readings etc.",
+    "Start writing vows",
     "Set up gift list",
   ];
 
   const tasksForThree = [
     "Send invitations",
-    "Alter dress and/or suit",
-    "Have hair and makeup trial/s",
+    "Alter dress &/or suit",
+    "Have hair & makeup trial/s",
     "Enjoy your hen/stag do",
     "Break in shoes",
     "Write speeches",
     "Buy thank you presents",
     "Go menu tasting with caterers",
     "Make table plan",
-    "Confirm guest numbers and dietary requirements",
+    "Confirm guest numbers & dietary requirements",
   ];
   const tasksForOne = [
     "Have wedding rehearsal",
-    "Confirm all bookings and vendors",
-    "Finalise wedding day plan and DELEGATE",
+    "Confirm all bookings & vendors",
+    "Finalise wedding day plan & DELEGATE",
     "Settle all final payments",
     "Collect hired items",
     "Pick up wedding day",
@@ -72,21 +72,20 @@ function Planner() {
       <Header />
       <Nav />
       <div className="planner-container">
-        <h1 className="home-planner">Planner</h1>
+        <img
+          className="planner-img"
+          src={kiss}
+          alt="bride and groom kissing in orchard"
+        />
 
         <p className="pl-p-container">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitasse
           platea dictumst vestibulum rhoncus est. Adipiscing enim eu turpis
           egestas. Faucibus ornare suspendisse sed nisi lacus sed viverra
-          tellus. Urna nec tincidunt praesent semper feugiat nibh sed. Quis
-          imperdiet massa tincidunt nunc. Lectus proin nibh nisl condimentum id
-          venenatis. Imperdiet massa tincidunt nunc pulvinar. Et malesuada fames
-          ac turpis. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper.
-          Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien
-          nec. Et tortor consequat id porta nibh venenatis cras.
+          tellus.
         </p>
-        <div className="ind-tasks-container">
+        <div>
           <span>
             <h1>18 Months Out</h1>
             <Tasklist

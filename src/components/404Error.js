@@ -1,15 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Error from "../images/404-error.jpg";
+import Nav from "./Nav";
+import Home from "./Home";
+import Header from "./Header";
+import Error from "../images/flower-error.png";
+import Footer from "./Footer";
 
 class ErrorPage extends React.Component {
   render() {
     return (
       <div>
-        <h1>
-          <Link to="/">Click here to return to the homepage</Link>
-        </h1>
-        <img className="error" src={Error} />
+        <Header />
+        <Nav />
+        <div className="error-container">
+          <p>
+            <Link to="/">Whoops! Return to the homepage</Link>
+          </p>
+          <img className="error" src={Error} />
+        </div>
+        <Footer />
       </div>
     );
   }

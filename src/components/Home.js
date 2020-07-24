@@ -10,7 +10,6 @@ function Home() {
     <div className="">
       <Header />
       <Nav />
-      <h1>Home</h1>
       <img src={couple} alt="bride and groom under fairy lights" width="100%" />
       <Countdown />
       <Footer />

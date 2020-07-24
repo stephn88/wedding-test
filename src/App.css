@@ -2,17 +2,15 @@
 
 body,
 html {
-  height: 100%;
 }
 
 .App {
   font-family: "PT Sans Narrow", sans-serif;
-  align-items: center;
-  background-color: ghostwhite;
   color: black;
   background-image: url("https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1910&q=80");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 200%;
+  background-color: floralwhite;
+  padding: 20px;
 }
 
 h1 {
@@ -22,26 +20,36 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 25px;
   align-items: center;
-  font-size: large;
-  background-color: seashell;
-  padding: 10px;
+  font-size: 20px;
   text-transform: uppercase;
   flex-wrap: wrap;
+  color: black;
+  text-shadow: grey;
 }
 
 .header {
-  padding-bottom: 10px;
-  justify-content: center;
-}
-.header img {
-  width: 50%;
-  flex-flow: row;
+  padding: 5px;
   justify-content: center;
 }
 
-.footer h4 {
+.header img {
+  width: 30%;
+  float: right;
+}
+
+.footer {
   text-align: center;
+  display: flex;
+  justify-items: center;
+  color: red;
+}
+
+h4 {
+  text-align: center;
+  justify-items: center;
+  color: black;
 }
 
 li {
@@ -139,67 +147,87 @@ button:active {
   text-align: center;
 }
 
-@media only screen and (max-width 600px) {
-  .tasklist-container {
-    font-size: 1px;
+@media only screen and (max-device-width: 480px) {
+  .App {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .nav-links {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 20px;
+    margin-top: 10px;
+    color: black;
+  }
+
+  .header {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+  }
+  .header img {
+    width: 80%;
+  }
+
+  /*giftlist*/
+
+  /*planner*/
+  .ind-tasks-container {
   }
 
   .planner-container {
     display: flex;
     flex-direction: column;
-    margin: 20px;
-    justify-content: center;
-    justify-items: center;
-  }
-
-  h1 {
-    text-align: center;
-    color: black;
-  }
-
-  .img.planner {
-    width: 50%;
-    justify-items: center;
-    justify-content: center;
-  }
-
-  .task-btn {
-    font-size: 10px;
-    background-color: green;
-    color: white;
-  }
-
-  .nav-links {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  /*planner*/
-  .tasklist-container {
-    font-size: 1px;
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  .planner-container {
-    display: flex;
     margin: 10px;
-    flex-wrap: nowrap;
-    font-size: 12px;
-  }
-  .planner img {
-    width: 40%;
-    margin: 15px;
-  }
-  .task-btn {
-    font-size: 10px;
-    width: 5%;
+    font-size: 20px;
+    text-align: left;
   }
 
-  .nav-links {
+  .planner-img {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .task-btn {
+    font-size: 25px;
+    width: auto;
+    align-items: stretch;
+  }
+
+  .sub-btn {
+    font-size: 25px;
+    width: auto;
+    align-items: stretch;
+  }
+
+  span {
+    font-size: 20px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /*relaxation*/
+
+  /*about*/
+
+  /*error*/
+  .error-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .error-container p {
+    font-size: 20px;
+    text-align: center;
+  }
+  .error {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    width: 95%;
   }
 }
