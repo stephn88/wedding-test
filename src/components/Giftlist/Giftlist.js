@@ -5,9 +5,8 @@ import Footer from "../Footer";
 import { Link } from "react-router-dom";
 
 function GiftList() {
-  const [basket, setBasket] = useState([]);
-
   const [gift] = useState([
+    //array of objects
     {
       name: "Meal for two",
       price: "£40",
@@ -73,8 +72,11 @@ function GiftList() {
       <h1>Gift List</h1>
       <h2>Have everything you need? Why not ask for honeymoon experiences?</h2>
       <div>
-        {gift.map((gift, id) => (
-          <span className="gifts-sp-container">
+        {gift.map((
+          gift,
+          id //will present a list of the gifts with the name, price and an image
+        ) => (
+          <div className="gifts-sp-container">
             <div className="gifts-container" key={id}>
               <h2>{gift.name}</h2>
               <h2>{gift.price}</h2>
@@ -92,7 +94,7 @@ function GiftList() {
               Habitasse platea dictumst vestibulum rhoncus est. Adipiscing enim
               c turpis. Nunc mi ipsu
             </p>
-          </span>
+          </div>
         ))}
       </div>
       <Footer />

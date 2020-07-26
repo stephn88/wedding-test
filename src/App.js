@@ -7,11 +7,11 @@ import {
 } from "react-router-dom";
 import "./App.css";
 import Planner from "./components/Planner";
-import { Tasklist } from "./components/Tasklist";
+//import { Tasklist } from "./components/Tasklist";
 import Home from "./components/Home";
 import About from "./components/About";
 import Relaxation from "./components/Relaxation";
-import Nav from "./components/Nav";
+//import Nav from "./components/Nav";
 import GiftList from "./components/Giftlist/Giftlist";
 import Error from "./components/404Error";
 //import Footer from "./components/Footer";

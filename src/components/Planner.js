@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import kiss from "../images/couple-kiss.jpg";
 
 function Planner() {
+  //made individual arrays for the milestones
   const tasksForEighteen = [
     "Decide budget",
     "Pick venue",
@@ -91,8 +92,8 @@ function Planner() {
             {/*using spans to separate each list*/}
             <h1>18 Months Out</h1>
             <Tasklist
-              tasksReference="EighteenMonths"
-              givenTasks={tasksForEighteen}
+              tasksReference="EighteenMonths" //this is taken from the tasklist component to show how many tasks are left
+              givenTasks={tasksForEighteen} //outputs tasklist for this milestone
             />
           </span>
           <span>

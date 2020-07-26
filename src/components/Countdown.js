@@ -15,8 +15,8 @@ const Countdown = () => {
     }
 
     interval = setInterval(() => {
-      const now = new Date().getTime();
-      const distance = countdownDate - now;
+      const now = new Date().getTime(); // checking for the current date
+      const distance = countdownDate - now; //calculating how many days between the wedding and the current date
       const days = Math.floor(distance / (1000 * 60 * 60 * 24)); //rounding to 1 day
 
       if (distance < 0) {
@@ -24,9 +24,9 @@ const Countdown = () => {
       } else {
         setTimerDays(days);
       }
-    }, 1000);
+    }, 1000); //checking whether the event in today, otherwise will calculate the days until the event every second
   };
-  //when the component dismounts and the useEffect hook will run this code//
+  //when the component dismounts and the useEffect hook will run this code
   useEffect(() => {
     startTimer();
     return () => {
@@ -34,7 +34,7 @@ const Countdown = () => {
     };
   });
 
-  const [selectedDate, setSelectedDate] = useState(new Date());
+  const [selectedDate, setSelectedDate] = useState(new Date()); //used to connect the countdown to the calendar where the user will input their preferred date
 
   return (
     <section className="timer-container">
@@ -53,7 +53,8 @@ const Countdown = () => {
           <h2>Wedding Day Countdown</h2>
         </div>
         <div className="c">
-          <h2>{timerDays} days</h2>
+          <h2>{timerDays} days</h2>{" "}
+          {/*will show how many days between current day and the future date*/}
           <p>until your special day</p>
         </div>
       </section>
