@@ -88,7 +88,7 @@ function Planner() {
           tellus.
         </p>
         <div className="gift-spans">
-          <span>
+          <span className="task-span">
             {/*using spans to separate each list*/}
             <h1>18 Months Out</h1>
             <Tasklist
@@ -96,26 +96,26 @@ function Planner() {
               givenTasks={tasksForEighteen} //outputs tasklist for this milestone
             />
           </span>
-          <span>
+          <span className="task-span">
             <h1>12 Months Out</h1>
             <Tasklist
               tasksReference="TwelveMonths"
               givenTasks={tasksForTwelve}
             />
           </span>
-          <span>
+          <span className="task-span">
             <h1>9 Months Out</h1>
             <Tasklist tasksReference="NineMonths" givenTasks={tasksForNine} />
           </span>
-          <span>
+          <span className="task-span">
             <h1>6 Months Out</h1>
             <Tasklist tasksReference="SixMonths" givenTasks={tasksForSix} />
           </span>
-          <span>
+          <span className="task-span">
             <h1>3 Months Out</h1>
             <Tasklist tasksReference="ThreeMonths" givenTasks={tasksForThree} />
           </span>
-          <span>
+          <span className="task-span">
             <h1>1 Week Out</h1>
             <Tasklist tasksReference="OneWeek" givenTasks={tasksForOne} />
           </span>
