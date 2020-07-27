@@ -20,7 +20,7 @@ function Relaxation() {
         breathe in sync with this.
       </h3>
       <a href="https://www.duffthepsych.com/stopanxiety/">Image source</a>
-      <br />
+
       <img
         src="https://www.duffthepsych.com/wp-content/uploads/2015/02/breathe-gif.gif"
         alt="breathing exercise for anxiety"
