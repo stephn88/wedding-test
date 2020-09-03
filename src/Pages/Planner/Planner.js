@@ -1,9 +1,9 @@
 import React from "react";
 import Tasklist from "./Tasklist";
-import Nav from "./Nav";
-import Header from "./Header";
-import Footer from "./Footer";
-import kiss from "../images/couple-kiss.jpg";
+import Nav from "../../components/Nav";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import kiss from "./couple-kiss.jpg";
 
 function Planner() {
   //made individual arrays for the milestones
@@ -66,7 +66,7 @@ function Planner() {
     "Finalise wedding day plan",
     "Settle all final payments",
     "Collect hired items",
-    "Pick up wedding day",
+    "Pick up wedding dress",
   ];
 
   return (
@@ -87,38 +87,38 @@ function Planner() {
           egestas. Faucibus ornare suspendisse sed nisi lacus sed viverra
           tellus.
         </p>
-        <div className="gift-spans">
-          <span className="task-span">
-            {/*using spans to separate each list*/}
+        <div className="task-divs">
+          <div className="task-div">
+            {/*using divs to separate each list*/}
             <h1>18 Months Out</h1>
             <Tasklist
               tasksReference="EighteenMonths" //this is taken from the tasklist component to show how many tasks are left
               givenTasks={tasksForEighteen} //outputs tasklist for this milestone
             />
-          </span>
-          <span className="task-span">
+          </div>
+          <div className="task-div">
             <h1>12 Months Out</h1>
             <Tasklist
               tasksReference="TwelveMonths"
               givenTasks={tasksForTwelve}
             />
-          </span>
-          <span className="task-span">
+          </div>
+          <div className="task-div">
             <h1>9 Months Out</h1>
             <Tasklist tasksReference="NineMonths" givenTasks={tasksForNine} />
-          </span>
-          <span className="task-span">
+          </div>
+          <div className="task-div">
             <h1>6 Months Out</h1>
             <Tasklist tasksReference="SixMonths" givenTasks={tasksForSix} />
-          </span>
-          <span className="task-span">
+          </div>
+          <div className="task-div">
             <h1>3 Months Out</h1>
             <Tasklist tasksReference="ThreeMonths" givenTasks={tasksForThree} />
-          </span>
-          <span className="task-span">
+          </div>
+          <div className="task-div">
             <h1>1 Week Out</h1>
             <Tasklist tasksReference="OneWeek" givenTasks={tasksForOne} />
-          </span>
+          </div>
         </div>
       </div>
       <Footer />

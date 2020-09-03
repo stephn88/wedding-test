@@ -5,21 +5,21 @@ function Nav() {
   return (
     <nav>
       <ul className="nav-links">
-        <Link to="/">
-          <li>Home</li>
-        </Link>
-        <Link to="/planner">
-          <li>Planner</li>
-        </Link>
-        <Link to="/giftlist">
-          <li>GiftList</li>
-        </Link>
-        <Link to="/relaxation">
-          <li>Relaxation</li>
-        </Link>
-        <Link to="/about">
-          <li>About</li>
-        </Link>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/planner">Planner</Link>
+        </li>
+        <li>
+          <Link to="/giftlist">Gift List</Link>
+        </li>
+        <li>
+          <Link to="/relaxation">Relaxation</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
       </ul>
     </nav>
   );

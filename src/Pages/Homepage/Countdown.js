@@ -9,8 +9,7 @@ const Countdown = () => {
 
   const startTimer = () => {
     let countdownDate = new Date();
-
-    {
+    if (selectedDate !== undefined) {
       countdownDate = selectedDate.getTime();
     }
 
@@ -40,7 +39,7 @@ const Countdown = () => {
     <section className="timer-container">
       <section className="timer">
         <div>
-          <h2>Pick your wedding date</h2>
+          <h2 className="date-title">Pick your wedding date</h2>
           <DatePicker
             selected={selectedDate}
             onChange={(date) => setSelectedDate(date)}
@@ -50,12 +49,12 @@ const Countdown = () => {
             showMonthDropdown
             showYearDropdown
           />
-          <h2>Wedding Day Countdown</h2>
+          <h2 className="date-title">Wedding Day Countdown</h2>
         </div>
         <div className="c">
-          <h2>{timerDays} days</h2>{" "}
+          <h2 className="date-title">{timerDays} days</h2>{" "}
           {/*will show how many days between current day and the future date*/}
-          <p>until your special day</p>
+          <p className="timer-text">until your special day</p>
         </div>
       </section>
     </section>

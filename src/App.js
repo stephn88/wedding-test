@@ -1,25 +1,16 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
-import Planner from "./components/Planner";
-//import { Tasklist } from "./components/Tasklist";
-import Home from "./components/Home";
-import About from "./components/About";
-import Relaxation from "./components/Relaxation";
-//import Nav from "./components/Nav";
-import GiftList from "./components/Giftlist/Giftlist";
-import Error from "./components/404Error";
-//import Footer from "./components/Footer";
-//import Todo from "./components/Todo";
+import Planner from "./Pages/Planner/Planner";
+import Home from "./Pages/Homepage/Home";
+import About from "./Pages/About/About";
+import Relaxation from "./Pages/Relaxation/Relaxation";
+import GiftList from "./Pages/Giftlist/Giftlist/Giftlist";
+import Error from "./Pages/404/404Error";
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
         <Switch>
           <Route path="/" exact component={Home} />

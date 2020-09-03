@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "./Header";
-import Nav from "./Nav";
-import Footer from "./Footer";
-import laugh from "../images/groom-laugh.jpg";
+import Header from "../../components/Header";
+import Nav from "../../components/Nav";
+import Footer from "../../components/Footer";
+import laugh from "./groom-laugh.jpg";
 
 function About() {
   return (

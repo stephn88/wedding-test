@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import ReactDOM from "react-dom";
 
 function Tasklist(props) {
   let newTasks = props.givenTasks; //creating new task array
@@ -50,9 +49,7 @@ function SubmitForm(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    {
-      /*preventing the page from refreshing */
-    }
+    /*preventing the page from refreshing */
     if (term === "") return;
     props.onFormSubmit(term);
     setTerm("");
@@ -63,6 +60,7 @@ function SubmitForm(props) {
       {" "}
       {/*input field for the user to add a task */}
       <input
+        className="task-input"
         type="text"
         placeholder="Enter wedding task"
         value={term}
@@ -105,9 +103,7 @@ const Todo = (props) => {
         className="task-btn"
         onClick={() => {
           props.onDelete(props.id);
-          {
-            /*deletes task from list */
-          }
+          /*deletes task from list */
         }}
       >
         Done

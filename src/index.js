@@ -3,17 +3,11 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import { BrowserRouter as Router } from "react-router-dom";
-//import Nav from "./components/Nav";
-//import Footer from "./components/Footer";
-//import Header from "./components/Header";
 
 ReactDOM.render(
-  <Router basename={process.env.PUBLIC_URL}>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </Router>,
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
   document.getElementById("root")
 );
 
