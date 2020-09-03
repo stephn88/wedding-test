@@ -3,6 +3,7 @@ import Header from "../../components/Header";
 import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 import laugh from "./groom-laugh.jpg";
+import "./about.css";
 
 function About() {
   return (

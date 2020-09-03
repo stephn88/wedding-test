@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import Header from "../../../components/Header";
-import Nav from "../../../components/Nav";
-import Footer from "../../../components/Footer";
+import Header from "../../components/Header";
+import Nav from "../../components/Nav";
+import Footer from "../../components/Footer";
 import { Link } from "react-router-dom";
+import "./giftlist.css";
 
 function GiftList() {
   const [gift] = useState([

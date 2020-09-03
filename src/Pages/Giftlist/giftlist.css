@@ -1,0 +1,156 @@
+/*desktop*/
+
+h2 {
+  text-align: center;
+  word-wrap: normal;
+}
+
+.giftlist {
+  background-color: seashell;
+  display: Flex;
+  flex-direction: row;
+}
+
+.gifts-sp-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.gifts-sp-container p {
+  text-align: center;
+  word-wrap: normal;
+  justify-items: baseline;
+  font-size: 25px;
+}
+
+.giftlist-container {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  clear: both;
+}
+
+.gifts-container {
+  box-shadow: 0 4px 8px 0 black;
+  /* max-width: 300px;*/
+  /* height: auto; */
+  margin: 20px;
+  text-align: center;
+  background-color: seashell;
+  border: black solid 2px;
+  text-transform: uppercase;
+  /* width: 60%; */
+}
+
+.gifts-container img {
+  width: 80%;
+  height: auto;
+  flex-direction: column;
+}
+
+.gifts-container button {
+  width: 40%;
+  height: 20px;
+  background-color: rgb(41, 212, 41);
+  color: white;
+  margin-bottom: 10px;
+}
+
+button:active {
+  transform: translate(2px);
+}
+
+.gifts-container {
+  margin: 40px;
+  text-align: center;
+  background-color: seashell;
+  max-width: 150%;
+  max-height: 150%;
+  text-transform: uppercase;
+}
+
+.gifts-container img {
+  width: 100%;
+  flex-direction: column;
+}
+
+.gifts-sp-container p {
+  font-size: 30px;
+  vertical-align: center;
+}
+
+.gifts-container button {
+  width: 40%;
+  background-color: rgb(41, 212, 41);
+  color: white;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+button:active {
+  transform: translate(2px);
+}
+/* mobile */
+
+/*giftlist*/
+
+.gifts-sp-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.gifts-sp-container p {
+  font-size: 20px;
+}
+
+.gifts-container button {
+  width: 80%;
+  background-color: rgb(41, 212, 41);
+  color: white;
+  text-transform: uppercase;
+}
+
+button:active {
+  transform: translate(2px);
+}
+
+/* ipad */
+@media only screen and (min-width: 481px) and (max-width: 959px) {
+  /*giftlist*/
+
+  .gifts-sp-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gifts-container {
+    margin: 40px;
+    text-align: center;
+    background-color: seashell;
+    max-width: 150%;
+    max-height: 150%;
+    text-transform: uppercase;
+  }
+
+  .gifts-container img {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .gifts-sp-container p {
+    font-size: 30px;
+    vertical-align: center;
+  }
+
+  .gifts-container button {
+    width: 100%;
+    background-color: rgb(41, 212, 41);
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  button:active {
+    transform: translate(2px);
+  }
+}

@@ -1,0 +1,21 @@
+/*relaxation*/
+
+.relaxation-container {
+  clear: both;
+}
+
+/* mobile */
+/*relaxation*/
+h3 {
+  font-size: 25px;
+  text-align: center;
+}
+
+/* ipad */
+@media only screen and (min-width: 481px) and (max-width: 959px) {
+  /*relaxation*/
+  h3 {
+    font-size: 35px;
+    text-align: center;
+  }
+}

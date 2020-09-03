@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../../components/Footer";
 import Nav from "../../components/Nav";
 import Header from "../../components/Header";
+import "./relaxation.css";
 import breathe from "./breathe.jpg";
 
 function Relaxation() {

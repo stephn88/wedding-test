@@ -5,7 +5,7 @@ import Planner from "./Pages/Planner/Planner";
 import Home from "./Pages/Homepage/Home";
 import About from "./Pages/About/About";
 import Relaxation from "./Pages/Relaxation/Relaxation";
-import GiftList from "./Pages/Giftlist/Giftlist/Giftlist";
+import GiftList from "./Pages/Giftlist/Giftlist";
 import Error from "./Pages/404/404Error";
 
 function App() {

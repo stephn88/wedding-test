@@ -4,6 +4,7 @@ import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 import Countdown from "./Countdown";
 import couple from "./couple-fairy-lights.jpg";
+import "./home.css";
 
 function Home() {
   return (
