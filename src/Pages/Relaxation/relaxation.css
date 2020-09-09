@@ -5,10 +5,12 @@
 }
 
 /* mobile */
-/*relaxation*/
-h3 {
-  font-size: 25px;
-  text-align: center;
+@media only screen and (max-device-width: 480px) {
+  /*relaxation*/
+  h3 {
+    font-size: 25px;
+    text-align: center;
+  }
 }
 
 /* ipad */
